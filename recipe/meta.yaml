@@ -1,5 +1,5 @@
 {% set name = "rucio-clients" %}
-{% set version = "1.28.2" %}
+{% set version = "1.28.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rucio-clients-{{ version }}.tar.gz
-  sha256: c076b58160c27a86715269b5c0532512db23f901b8610a2202cdab83d66cb1c0
+  sha256: f730ecbf2b9332db1c023ae4d006ed6d909c76b9a0f61115cc0b88f277827b9d
 
 build:
   number: 0
