@@ -1,5 +1,5 @@
 {% set name = "rucio-clients" %}
-{% set version = "34.6.0" %}
+{% set version = "35.4.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: ea835451d818fff1aab4ce5bc49f28b018e22bda84365af72a5a5b7c7b5f8890
+  sha256: f8771ee39d0d496109586ddbb4000ce006a193fd33cdac8a654661ae0b7346c0
 
 build:
   number: 0
@@ -19,13 +19,14 @@ requirements:
   host:
     - pip
     - python >=3.9
+    - setuptools
   run:
     - python >=3.9
     - dogpile.cache ~=1.2.2
-    - jsonschema ~=4.20.0
-    - requests ~=2.32.0
+    - jsonschema ~=4.23.0
+    - requests ~=2.32.3
     - tabulate ~=0.9.0
-    - urllib3 ~=1.26.18
+    - urllib3 ~=1.26.19
 
 test:
   imports:
