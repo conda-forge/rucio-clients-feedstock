@@ -7,26 +7,28 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 3c77dea0ce95b7649211da08cee7e93fa9ecb1a6c91bbe750b76b4c576a8b0dd
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python 3.9
     - setuptools
   run:
     - python >=3.9
-    - dogpile.cache ~=1.2.2
-    - jsonschema ~=4.23.0
-    - requests ~=2.32.3
-    - tabulate ~=0.9.0
-    - urllib3 ~=1.26.19
+    - dogpile.cache >=1.2.2
+    - jsonschema >=4.23.0
+    - packaging >=24.1
+    - requests >=2.32.3
+    - rich >=13.7.1
+    - tabulate >=0.9.0
+    - urllib3 >=1.26.19
 
 test:
   imports:
@@ -36,6 +38,7 @@ test:
     - pip check
   requires:
     - pip
+    - python 3.9
 
 about:
   home: https://rucio.cern.ch/
