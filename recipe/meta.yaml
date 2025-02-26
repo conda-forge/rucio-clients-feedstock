@@ -11,7 +11,7 @@ source:
   sha256: 3a85092e08a4bc17ac23803d390b34471166521fa48f5735b7f1c4560f4743bc
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -25,6 +25,7 @@ requirements:
     - dogpile.cache >=1.2.2
     - jsonschema >=4.23.0
     - packaging >=24.1
+    - paramiko >=3.4.0
     - requests >=2.32.3
     - rich >=13.7.1
     - tabulate >=0.9.0
