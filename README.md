@@ -144,4 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@bari12](https://github.com/bari12/)
+* [@maxnoe](https://github.com/maxnoe/)
 
