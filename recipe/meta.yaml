@@ -37,9 +37,8 @@ test:
   imports:
     - rucio
     - rucio.client
-  # disable pip check for now, the conda recipe is fine but the pypi package contains wrong dependencies
-  # commands:
-  #   - pip check
+  commands:
+    - pip check
   requires:
     - pip
     - python {{ python_min }}
