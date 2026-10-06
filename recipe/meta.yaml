@@ -1,5 +1,5 @@
 {% set name = "rucio-clients" %}
-{% set version = "41.3.0" %}
+{% set version = "41.4.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: f86b35f0a01c183f25981bea1bebb0e9f33f967b8268cde8dc48946e33475c04
+  sha256: 02af4aa25f1d48a2ec54cf92aa96225ef95a93807f930aa37e0e2607d11b1070
 
 build:
   number: 0
